@@ -1,0 +1,41 @@
+@import '../variable/variable';
+@import '../mixins/mixin';
+@import '../base/common';
+
+/*=====================================
+         teams part start 
+=======================================*/
+#teams {
+    padding-bottom: 80px;
+    .container {
+        .teams_container {
+            background: $green;
+            padding: 100px 70px;
+            border-radius: 45px;
+            .row {
+                align-items: stretch;
+                h4 {
+                    font-family: $poppins;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 60px;
+                    color: $white;
+                    padding-bottom: 30px
+                }
+                .banner_btn{
+                    a{
+                        @include common-button;
+                    }
+                }
+                p{
+                    @include paragraph($white, $poppins, 18px)
+                }
+            }
+        }
+    }
+}
+
+/*=====================================
+         teams part End 
+=======================================*/

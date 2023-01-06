@@ -1,0 +1,87 @@
+@import "../variable/_variable";
+@import "../mixins/_mixin";
+@import "../base/common";
+
+/*------footer start------*/
+footer {
+    padding-top: 80px;
+    border-top: 1px solid #196781; 
+
+    .paragraph {
+
+        .image {
+            max-width: 100%;
+            p {
+               @include paragraph(#E6E6E6, $poppins, 14px);
+               padding-top: 23px; 
+               padding-right: 20px;
+            }
+        }
+    }
+
+    .information {
+        padding-top: 15px;
+        h6 {
+            font-family: $poppins;
+            font-weight: 500;
+            font-size: 18px;
+            padding-bottom: 23px;
+        }
+        span{
+            a{
+                color: #E6E6E6;
+                text-decoration: none;
+            }
+        }
+        ul {
+            padding: 0;
+
+            li {
+                color: #E6E6E6;
+                font-family: $poppins;
+                font-weight: 400;
+                font-size: 14px;
+                a{
+                    color: #E6E6E6;
+                    font-family: $poppins;
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+        }
+        .footer_icon {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding-top: 10px;
+            i {
+                color: $black;
+                width: 40px;
+                height: 40px;
+                background: $white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all linear .3s;
+                cursor: pointer;
+                &:hover {
+                    border: 1px solid $red;
+                    color: $red;
+                }
+            }
+        }
+    }
+    .skillTest{
+        border-top: 1px solid #196781;
+        margin-top: 34px;
+        text-align: center;
+        padding-top: 26px;
+        padding-bottom: 19px;
+        p {
+            @include paragraph(#E6E6E6, $poppins, 14px) 
+         }
+    }
+}
+
+/*------footer end------*/

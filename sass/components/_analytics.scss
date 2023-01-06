@@ -1,0 +1,86 @@
+@import "../variable/_variable";
+@import "../mixins/_mixin";
+@import "../base/common";
+
+/*=====================================
+         analytics part Start 
+=======================================*/
+#analytics {
+    .container {
+        .row {
+            align-items: center;
+            .col-lg-5 {
+                display: grid;
+                gap: 10px;
+                .item {
+                    background: $green;
+                    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
+                    border-radius: 16px;
+                    padding: 15px 20px;
+                    display: flex;
+                    gap: 20px;
+                    .icon{
+                        .one{
+                            width: 30px;
+                            height: 30px;
+                            color: $white;
+                            background: $blue;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                        }
+                        .two{
+                            width: 30px;
+                            height: 30px;
+                            color: $white;
+                            background: $yellow;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                        }
+                        .three{
+                            width: 30px;
+                            height: 30px;
+                            color: $white;
+                            background: $red;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                        }
+                    }
+                    .icon_text{
+                        h5{
+                            font-family: $poppins;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 18px;
+                        }
+                        p{
+                            @include paragraph($white, $poppins, 15px)
+                        }
+                    }
+                }
+            }
+            .col-lg-7{
+                text-align: center;
+                .analytics_img{
+                    width: 665px;
+                    margin: 0 auto;
+                    img{
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+/*=====================================
+         analytics part End 
+=======================================*/

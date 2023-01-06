@@ -1,0 +1,72 @@
+@import "../variable/_variable";
+@import "../mixins/_mixin";
+@import "../base/common";
+
+/*=====================================
+         schedule part start 
+=======================================*/
+#schedule{
+    padding: 5px 0 90px;
+    .container{
+        .section_heading {
+            @include section-heading;
+        }
+        .row{
+            margin: 10px 0 0;
+            .col-lg-4{
+                .one {
+                    // padding: 50px 0;
+                    display: flex;
+                    gap: 20px;
+                    position: relative;
+                    z-index: 2;
+                    .icon{
+                        @include span;
+                    }
+                    .icon_text{
+                        text-align: left;
+                        padding: 0 !important;
+                        @include icon-text;
+                    }
+                }
+            }
+            .col-lg-4{
+                .two {
+                    // padding: 50px 0;
+                    display: flex;
+                    gap: 20px;
+                    position: relative;
+                    z-index: 2;
+                    .icon{
+                        @include span;
+                    }
+                    .icon_text{
+                        text-align: left;
+                        padding: 0 !important;
+                        @include icon-text;
+                    }
+                }
+            }
+            .col-lg-4{
+                .three {
+                    // padding: 50px 0;
+                    display: flex;
+                    gap: 20px;
+                    position: relative;
+                    z-index: 2;
+                    .icon{
+                        @include span;
+                    }
+                    .icon_text{
+                        text-align: left;
+                        padding: 0 !important;
+                        @include icon-text;
+                    }
+                }
+            }
+        }
+    }
+}
+/*=====================================
+         schedule part End 
+=======================================*/

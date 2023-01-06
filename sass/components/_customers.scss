@@ -1,0 +1,66 @@
+@import '../variable/variable';
+@import '../mixins/mixin';
+@import '../base/common';
+/*=====================================
+         customers part start 
+=======================================*/
+#customers{
+    padding: 122px 0;
+    .section_heading{
+        @include section-heading;
+        padding: 0 40px 50px;
+    }
+    .icon {
+        text-align: left;
+        i{
+            color: $yellow;
+            font-size: 100px;
+        }
+    }
+    p{
+        @include paragraph(#C6C6C6, $poppins, 22px);
+        padding: 0 100px 25px 0;
+    }
+    h5{
+        font-family: $poppins;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: $white;
+        position: relative;
+        z-index: 0;
+    }
+    .customers_img{
+        height: 540px;
+        width: 504px;
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+        .customers_top_right{
+            position: absolute;
+            top: 50px;
+            left: -60px;
+        }
+        .customers_bottom_left{
+            position: absolute;
+            bottom: 42px;
+            right: -88px;
+            z-index: 3;
+        }
+        .customer_bg{
+            position: absolute;
+            top: 0;
+            z-index: 3;
+        }
+        .customer{
+            position: absolute;
+            top: -44px;
+            z-index: 4;
+        }
+    }
+}
+/*=====================================
+         customers part End 
+=======================================*/

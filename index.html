@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="./images/favicon.png" type="icon/image">
+	<title>Movie sass project</title>
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- All google fonts start -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<!-- All Google fonts end -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/progress.css">
+	<link rel="stylesheet" href="css/venobox.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+	<!-- Nav Part Star -->
+	<nav class="navbar navbar-expand-lg" id="navbar">
+		<div class="container">
+			<div class="logo">
+				<a class="navbar-brand" href="#">
+					<img class="img-fluid w-70" src="./images/logo.png" alt="images">
+				</a>
+			</div>
+			<!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button> -->
+			<button class="animation_close_btn d-lg-none" type="button" data-bs-toggle="offcanvas"
+				data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+				<!-- <i class="fas fa-bars"></i> -->
+				<span class="line_1"></span>
+				<span class="line_2"></span>
+				<span class="line_3"></span>
+			</button>
+			<!-- btn btn-primary -->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav m-auto mb-2 mb-lg-0 main_manu">
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Category</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Testimonial</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+				<div class="sing_up_now">
+					<a class="common_btn" href="#">
+						<span>
+							Sing Up Now
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- Side menu start -->
+
+		<div class="offcanvas offcanvas-start d-lg-none" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+			id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+			<!-- <div class="offcanvas-header">
+			  <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+				<a href="index.html">
+				  <img class="img-fluid" src="./images/favicon.png" alt="image">
+				</a>
+			  </h5>
+			  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div> -->
+			<div class="offcanvas-body">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0 main_menu">
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#portfolio">Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Service</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Side menu end -->
+	</nav>
+
+	<!-- Nav Part End -->
+	<!-- Banner part start -->
+	<section id="banner">
+		<div class="overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="banner_info">
+							<h1>Everything For Your Remote Meetings
+								All In One Place</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit malesuada vitae varius velit
+								sem. Aliquet sapien vel lacus purus sit. At.</p>
+							<div class="banner_btn">
+								<a href="#">Download The Theme</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="banner_img">
+							<img class="img-fluid " src="images/banner-img.jpg" alt="image">
+							<div class="banner_top_right">
+								<img class="img-fluid " src="images/banner-top-right.png" alt="image">
+							</div>
+							<div class="banner_bottom_left">
+								<img class="img-fluid " src="images/banner-bottom-left.png" alt="image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Banner part end -->
+	<!-- workspace part start -->
+	<section id="workspace">
+		<div class="top_right">
+			<img class="img-fluid " src="images/bottom-left.png" alt="image">
+		</div>
+		<div class="bottom_left">
+			<img class="img-fluid " src="images/top-right.png" alt="image">
+		</div>
+		<div class="container">
+			<div class="section_heading">
+				<h3>
+					collaborative workspace for Every
+					each meeting For easy access
+				</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing.
+					egestas viverra id aliquet. vulputate egestas sollicitudin .
+				</p>
+			</div>
+			<div class="row g-5">
+				<div class="col-lg-4">
+					<div class="one">
+						<div class="icon">
+							<a href="#"><i class="fa-regular fa-bell"></i></a>
+						</div>
+						<div class="icon_text">
+							<h5>Focus only value On
+								Real activities</h5>
+							<p>Lorem ipsum dolor amet, cotetur adipiscing elit. Neue enim diam nare sagiis, aliquet
+								cursus</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="two">
+						<div class="icon">
+							<a href="#"><i class="fa-solid fa-paperclip"></i></a>
+						</div>
+						<div class="icon_text">
+							<h5>Manage your works
+								effortlessly</h5>
+							<p>Lorem ipsum dolor amet, cotetur adipiscing elit. Neue enim diam nare sagiis, aliquet
+								cursus</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="three">
+						<div class="icon">
+							<a href="#"><i class="fa-solid fa-tv"></i></a>
+						</div>
+						<div class="icon_text">
+							<h5>Focus only value On
+								Real activities</h5>
+							<p>Lorem ipsum dolor amet, cotetur adipiscing elit. Neue enim diam nare sagiis, aliquet
+								cursus</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- workspace part end -->
+	<!-- Schedule part start -->
+	<section id="schedule">
+		<div class="container">
+			<div class="section_heading">
+				<h3>
+					We know Happy Schedule is tool because we use every day
+				</h3>
+			</div>
+			<div class="row g-5">
+				<div class="col-lg-4">
+					<div class="one">
+						<div class="icon">
+							<span>01</span>
+						</div>
+						<div class="icon_text">
+							<h5>Manage your works
+								effortlessly</h5>
+							<p>Lorem ipsum dolor amet, cotetur adipiscing elit. Neue enim diam nare sagiis, aliquet
+								cursus</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="two">
+						<div class="icon">
+							<span>02</span>
+						</div>
+						<div class="icon_text">
+							<h5>Manage your works
+								effortlessly</h5>
+							<p>Lorem ipsum dolor amet, cotetur adipiscing elit. Neue enim diam nare sagiis, aliquet
+								cursus</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="three">
+						<div class="icon">
+							<span>03</span>
+						</div>
+						<div class="icon_text">
+							<h5>Manage your works
+								effortlessly</h5>
+							<p>Lorem ipsum dolor amet, cotetur adipiscing elit. Neue enim diam nare sagiis, aliquet
+								cursus</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row g-5">
+				<div class="col-lg-4">
+					<div class="one">
+						<div class="icon">
+							<span>04</span>
+						</div>
+						<div class="icon_text">
+							<h5>Manage your works
+								effortlessly</h5>
+							<p>Lorem ipsum dolor amet, cotetur adipiscing elit. Neue enim diam nare sagiis, aliquet
+								cursus</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="two">
+						<div class="icon">
+							<span>05</span>
+						</div>
+						<div class="icon_text">
+							<h5>Manage your works
+								effortlessly</h5>
+							<p>Lorem ipsum dolor amet, cotetur adipiscing elit. Neue enim diam nare sagiis, aliquet
+								cursus</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="three">
+						<div class="icon">
+							<span>06</span>
+						</div>
+						<div class="icon_text">
+							<h5>Manage your works
+								effortlessly</h5>
+							<p>Lorem ipsum dolor amet, cotetur adipiscing elit. Neue enim diam nare sagiis, aliquet
+								cursus</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Schedule part end -->
+	<!-- analytics part start -->
+	<section id="analytics">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5">
+					<div class="item">
+						<div class="icon">
+							<span class="one">1</span>
+						</div>
+						<div class="icon_text">
+							<h5>Decisions with impact make data </h5>
+							<p>Lorem ipsum dolor sit amet, consesctgetur adipiscing elit. Sit malesuaa vitae varius vem
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="icon">
+							<span class="two">2</span>
+						</div>
+						<div class="icon_text">
+							<h5>Focus only value On Real activities </h5>
+							<p>Lorem ipsum dolor sit amet, consesctgetur adipiscing elit. Sit malesuaa vitae varius vem
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="icon">
+							<span class="three">3</span>
+						</div>
+						<div class="icon_text">
+							<h5>Manage your works effortlessly</h5>
+							<p>Lorem ipsum dolor sit amet, consesctgetur adipiscing elit. Sit malesuaa vitae varius vem
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-7">
+					<div class="analytics_img">
+						<img class="img-fluid" src="/images/analaytics.png" alt="images">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- analytics part end -->
+	<!-- Customers part start -->
+	<section id="customers">
+		<div class="container">
+			<div class="section_heading">
+				<h3>
+					Our Customers Have Nice
+					Things To Say About Us
+				</h3>
+			</div>
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="customers_img">
+						<div class="customers_top_right">
+							<img class="img-fluid " src="images/banner-top-right.png" alt="image">
+						</div>
+						<div class="customers_bottom_left">
+							<img class="img-fluid " src="images/banner-bottom-left.png" alt="image">
+						</div>
+						<div class="customer_bg">
+							<img class="img-fluid" src="/images/customer-bg-img.png" alt="images">
+						</div>
+						<div class="customer">
+							<img class="img-fluid" src="/images/customer.png" alt="images">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="icon">
+						<i class="fa-solid fa-quote-left"></i>
+						<!-- <img class="img-fluid" src="/images/customer-icon.png" alt=""> -->
+					</div>
+					<p>"Dealing with sickle cell has been a lifelong rollercoaster. The thought of my voice being heard in the world of medicine is really what motivated me to join this study. Not only to advocate for myself but” </p>
+					<h5>Jhony Bravo</h5>
+					<p>CEO, THE MEFISHER</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Customers part end -->
+	<!-- teams part start -->
+	<section id="teams">
+		<div class="container">
+			<div class="teams_container">
+				<div class="row">
+					<div class="col-lg-7">
+						<h4>Helping teams in the 
+							world with focus</h4>
+						<div class="banner_btn">
+							<a href="#">Download The Theme</a>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin .</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- teams part end -->
+	<!-- footer part start -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-6 col-lg-4">
+					<div class="paragraph">
+						<div class="image">
+							<img class="img-fluid" src="images/f-logo.png" alt="">
+							<p> Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, 
+								sed condimentum volutpat. 
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 col-lg-3">
+					<div class="information">
+						<h6>Socials</h6>
+						<span><a href="mailto:themefisher@gmail.com">themefisher@gmail.com</a></span>
+						<div class="footer_icon">
+							<a href="#"><i class="fa-brands fa-youtube"></i></a>
+							<a href="#"><i class="fa-brands fa-twitter"></i></a>
+							<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+							<a href="#"><i class="fa-brands fa-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 col-lg-2">
+					<div class="information">
+						<h6>Quick Links</h6>
+						<ul>
+							<li><a href="#">Category</a></li>
+							<li><a href="#">Testimonial</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-6 col-lg-3">
+					<div class="information">
+						<h6>Location & Contact</h6>
+						<ul>
+							<li>2118 Thornridge Cir. Syracuse, 
+								Connecticut 35624</li>
+							<li><a href="tell:(704) 555-0127">(704) 555-0127</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="skillTest">
+			<p>Designed By Themefisher, Developed by Gethugothemes </p>
+		</div>
+	</footer>
+	<!-- footer part end -->
+
+
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.barfiller.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+	<script src="js/venobox.min.js"></script>
+	<script src="js/tilt.jquery.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
